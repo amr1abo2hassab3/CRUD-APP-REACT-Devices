@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext } from "react";
+import "./App.css";
+import ComponentA from "./component/ComponentA";
+
+export const userContext = createContext();
+export const cityContext = createContext();
+export const ageContext = createContext();
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div className="App">
+    <userContext.Provider value={"Amr"}>
+      <cityContext.Provider value={"Sohag"}>
+        <ageContext.Provider value={"22"}>
+          <ComponentA />
+        </ageContext.Provider>
+      </cityContext.Provider>
+    </userContext.Provider>
+  </div>;
 }
 
 export default App;
