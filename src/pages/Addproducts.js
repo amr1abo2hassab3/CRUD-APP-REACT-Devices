@@ -11,6 +11,7 @@ const Addproducts = () => {
   const [categoryInput, setCategory] = useState("");
   const navigate = useNavigate();
 
+  // this function save the img 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     setImg(file); // تخزين ملف الصورة
