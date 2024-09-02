@@ -1,0 +1,99 @@
+.products h2 {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+.btnLand {
+    width: 100%;
+    font-weight: bolder;
+}
+
+.content-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 40px;
+}
+
+.products-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    border: solid 2px var(--main-color);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    box-shadow: 0 0 2rem var(--main-color);
+    transition: all 0.4s ease-in-out;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.products-box img {
+    max-width: 300px;
+    border-radius: 2em;
+    object-fit: cover;
+    height: 300px;
+    cursor: pointer;
+}
+
+
+.products-box h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.products-box p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-Action {
+    position: absolute;
+    width: 60px;
+    height: 200px;
+    bottom: 20px;
+    right: -150px;
+    background: var(--second-bg-color);
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.products-box:hover .btn-Action {
+    right: 3px;
+}
+
+.btn-Action div {
+    background-color: var(--bg-color);
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.btn-Action div a {
+    color: var(--text-color);
+    text-decoration: none;
+    width: 100%;
+}
+
+.btn-Action div:hover {
+    border: solid 1px var(--text-color);
+}

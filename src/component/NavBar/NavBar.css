@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    align-items: center;
+    z-index: 100;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 3rem;
+    transition: 0.3s ease-in-out;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.navbar .active,
+.navbar a:hover {
+    color: var(--main-color);
+}
